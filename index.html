@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马克思主义基本原理学习平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", SimHei, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.7;
+        }
+        /* 导航栏 */
+        header {
+            background-color: #990000;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+        /* 横幅区域 */
+        .banner {
+            background: linear-gradient(rgba(120,0,0,0.8), rgba(120,0,0,0.8)), url("");
+            background-color: #770000;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .banner p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        /* 容器通用 */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 3rem auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #990000;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #990000;
+            display: inline-block;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+        .intro-box {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 3rem;
+        }
+        /* 卡片布局 */
+        .card-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: #fff;
+            padding: 1.8rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-top: 4px solid #990000;
+        }
+        .card h3 {
+            color: #990000;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        /* 知识点区域 */
+        .knowledge {
+            background-color: #fff4f4;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .knowledge ul {
+            padding-left: 1.5rem;
+        }
+        .knowledge li {
+            margin: 0.8rem 0;
+        }
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+        /* 响应式适配 */
+        @media (max-width:768px){
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap:1rem;
+            }
+            .banner h1 {
+                font-size:1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">马原学习专题</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#part">理论组成</a></li>
+                    <li><a href="#key">核心要点</a></li>
+                    <li><a href="#practice">时代价值</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 横幅 -->
+    <section class="banner" id="home">
+        <h1>马克思主义基本原理</h1>
+        <p>坚持真理、坚守理想，学习马克思主义的立场、观点与方法，把握人类社会发展的客观规律</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">理论简介</h2>
+        <div class="intro-box">
+            <p>马克思主义是由马克思和恩格斯创立并为后继者不断发展的科学理论体系，是关于自然、社会和人类思维发展一般规律的学说，是关于社会主义必然代替资本主义、最终实现共产主义的学说。马克思主义基本原理，是马克思主义立场、观点、方法的集中体现，是马克思主义理论体系中最基础、最根本的内容。</p>
+            <br>
+            <p>马克思主义具有鲜明的科学性、人民性、实践性、发展性。它不是僵化的教条，而是行动的指南，随着时代、实践和科学的发展而不断丰富发展。</p>
+        </div>
+
+        <h2 class="section-title" id="part">三大组成部分</h2>
+        <div class="card-wrap">
+            <div class="card">
+                <h3>马克思主义哲学</h3>
+                <p>包括辩证唯物主义与历史唯物主义。阐明世界的物质统一性、对立统一规律、质量互变规律、否定之否定规律；揭示生产力与生产关系、经济基础与上层建筑的矛盾运动，科学认识社会历史发展规律。</p>
+            </div>
+            <div class="card">
+                <h3>马克思主义政治经济学</h3>
+                <p>以剩余价值学说为核心，剖析资本主义生产方式，揭示资本剥削的秘密，分析资本主义内在矛盾，阐明资本主义产生、发展和必然走向灭亡的历史趋势。</p>
+            </div>
+            <div class="card">
+                <h3>科学社会主义</h3>
+                <p>阐明无产阶级的历史使命，指明社会主义、共产主义的发展方向，回答无产阶级如何开展斗争、建立无产阶级专政、建设新社会，实现人的自由全面发展。</p>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="key">核心知识点</h2>
+        <div class="knowledge">
+            <ul>
+                <li><strong>物质与意识：</strong>物质第一性，意识第二性；意识对物质具有能动反作用，坚持一切从实际出发。</li>
+                <li><strong>对立统一规律：</strong>矛盾是事物发展的源泉和动力，坚持两点论与重点论相统一。</li>
+                <li><strong>实践与认识：</strong>实践是认识的来源、动力、检验标准和目的，认识在实践基础上螺旋上升。</li>
+                <li><strong>社会基本矛盾：</strong>生产力决定生产关系，经济基础决定上层建筑，矛盾运动推动社会形态更替。</li>
+                <li><strong>人民群众史观：</strong>人民群众是历史的创造者，是社会物质财富、精神财富的创造者与社会变革的决定力量。</li>
+                <li><strong>价值规律：</strong>商品价值由社会必要劳动时间决定，价格围绕价值波动。</li>
+                <li><strong>人的自由全面发展：</strong>共产主义社会的根本价值目标。</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title" id="practice">时代价值与实践意义</h2>
+        <div class="intro-box">
+            <p>马克思主义深刻改变了中国，中国也极大丰富了马克思主义。学习马克思主义基本原理，能够帮助我们树立科学的世界观、人生观、价值观，学会用辩证、历史的眼光看待问题，提升分析现实问题的能力。</p>
+            <br>
+            <p>在新时代，坚持把马克思主义基本原理同中国具体实际相结合、同中华优秀传统文化相结合，运用马克思主义立场观点方法观察时代、把握时代、引领时代。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>马克思主义基本原理专题学习网页 | 仅供课程学习使用</p>
+    </footer>
+</body>
+</html>
